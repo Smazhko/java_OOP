@@ -96,10 +96,7 @@ public class program
 
 		System.out.println(">>>>> КОНЕЦ СМЕНЫ >>>>>>");
 		System.out.println(automat010);
-
 	}
-
-
 }
 
 /*

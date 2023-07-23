@@ -2,10 +2,10 @@ package TradeAutomaton;
 
 public abstract class Product
 {
-	protected String name;
-	protected String category;
-	protected int price;
-	protected int count;
+	private String name;
+	private String category;
+	private int price;
+	private int count;
 
 
 	public Product(String name, String category, int price, int count)
@@ -45,6 +45,11 @@ public abstract class Product
 	public int getPrice()
 	{
 		return price;
+	}
+
+	public int getCount()
+	{
+		return count;
 	}
 
 	public void decreseCount()

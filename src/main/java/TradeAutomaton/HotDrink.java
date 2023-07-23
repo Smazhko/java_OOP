@@ -2,7 +2,7 @@ package TradeAutomaton;
 
 public class HotDrink extends Product
 {
-	Integer temperature;
+	private Integer temperature;
 	static double volume = 0.2;
 
 	public HotDrink(String name, Integer temperature, int price)
@@ -19,7 +19,12 @@ public class HotDrink extends Product
 	@Override
 	public String toString()
 	{
-		return String.format("горячий %-18s Ц: ₽%3d", name + " (" + temperature + "°C)", price);
+		return String.format("горячий %-18s Ц: ₽%3d", this.getName() + " (" + temperature + "°C)", this.getPrice());
 
+	}
+
+	public Integer getTemperature()
+	{
+		return temperature;
 	}
 }

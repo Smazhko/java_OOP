@@ -74,7 +74,7 @@ public final class HotDrinksAutomaton implements TradeAutomaton
 
 		for (int i = 0; i < drinks.size(); i++)
 		{
-			if (drinks.get(i).name.equals(drinkName) && drinks.get(i).temperature == temperature)
+			if (drinks.get(i).getName().equals(drinkName) && drinks.get(i).getTemperature() == temperature)
 			{
 				index = i;
 				break;
@@ -99,7 +99,7 @@ public final class HotDrinksAutomaton implements TradeAutomaton
 
 		for (int i = 0; i < drinks.size(); i++)
 		{
-			if (drinks.get(i).name.equals(drinkName))
+			if (drinks.get(i).getName().equals(drinkName))
 			{
 				index = i;
 				break;

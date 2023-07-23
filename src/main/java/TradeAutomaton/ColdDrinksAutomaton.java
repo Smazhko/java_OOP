@@ -64,14 +64,14 @@ public final class ColdDrinksAutomaton implements TradeAutomaton
 		System.out.printf("Покупка: %s (%.2f). Приходите ешё!%n-----------%n", cldDrnk.getName(), cldDrnk.getVolume());
 	}
 
-	public void buy(String drinkName, double volume)
+	public void buy(String drinkName, double drinkVolume)
 	{
 		LinkedList<ColdDrink> drinks = this.coldDrinkList;
 		Integer index = null;
 
 		for (int i = 0; i < drinks.size(); i++)
 		{
-			if (drinks.get(i).name.equals(drinkName) && drinks.get(i).getVolume() == volume)
+			if (drinks.get(i).getName().equals(drinkName) && drinks.get(i).getVolume() == drinkVolume)
 			{
 				index = i;
 				break;
@@ -80,7 +80,7 @@ public final class ColdDrinksAutomaton implements TradeAutomaton
 
 		if (index == null)
 		{
-			System.out.printf("К сожалению, напитка %s (%.2f л) нет в наличии.%n-----------%n", drinkName, volume);
+			System.out.printf("К сожалению, напитка %s (%.2f л) нет в наличии.%n-----------%n", drinkName, drinkVolume);
 		}
 		else
 		{
@@ -96,7 +96,7 @@ public final class ColdDrinksAutomaton implements TradeAutomaton
 
 		for (int i = 0; i < drinks.size(); i++)
 		{
-			if (drinks.get(i).name.equals(drinkName))
+			if (drinks.get(i).getName().equals(drinkName))
 			{
 				index = i;
 				break;

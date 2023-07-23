@@ -8,7 +8,8 @@ public class ColdDrink extends Product
 	@Override
 	public String toString()
 	{
-		return String.format("%-20s (%.2f л, кат.: %-14s) Ц: ₽%3d, в наличии %d ед.", name, volume, category, price, count);
+		return String.format("%-20s (%.2f л, кат.: %-14s) Ц: ₽%3d, в наличии %d ед.", this.getName(), volume,
+				this.getCategory(), this.getPrice(), this.getCount());
 	}
 
 	public ColdDrink(String name, String category, double volume, int price, int count)
@@ -21,6 +22,7 @@ public class ColdDrink extends Product
 	{
 		return volume;
 	}
+
 
 
 }
