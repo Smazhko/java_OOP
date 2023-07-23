@@ -1,0 +1,19 @@
+
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+R
+"src/main/java/sem2_1/interf_1.java,9\c\9c6a4e395abbefd5f4b2083dee383082e80674c9
+Q
+!src/main/java/sem2_1/IConstd.java,d\9\d9ff0d9abbd0d5ddd2f385130d0400749a6f0210
+W
+'src/main/java/testis/BaseCharacter.java,2\f\2fe83b6a3dfcae610f6de1b4d4ffb3d10ead28c5
+O
+src/main/java/testis/Dwarf.java,0\0\00aea8f8a483539eb37e59e076f6885231c508a6
+Q
+!src/main/java/testis/program.java,1\6\16b84e95cc25277254d67cc3a408613eee3f8f21
+D
+src/main/java/OOP.MD,f\7\f77c449c4d77e769fd3ef3759a157605c1e1c901
+G
+src/main/java/TEMP.java,0\0\00d023c64941b1872e21e2e689220f82125b180c
+K
+src/main/java/sem2_111.java,d\7\d71d0a0ac2a5a549db6ae1528986ac5b847e2d43

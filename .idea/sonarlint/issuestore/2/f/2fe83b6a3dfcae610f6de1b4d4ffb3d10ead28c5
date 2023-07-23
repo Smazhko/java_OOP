@@ -1,0 +1,19 @@
+
+o
+java:S1104"YMake StartLocation a static final constant or non-public and provide accessors if needed.(†şŞØ
+I
+java:S1444"3Make this "public static StartLocation" field final(†şŞØ
+k	java:S116
+"QRename this field "Gender" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ Úøÿÿÿÿ
+b	java:S116"MRename this field "HP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò°ó“
+b	java:S116"MRename this field "MP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ®±„
+b	java:S116"MRename this field "CP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…¸À¼
+n
+java:S3008"XRename this field "StartLocation" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†şŞØ
+N
+java:S5993)"9Change the visibility of this constructor to "protected".(…ŒÉ
+O
+java:S59932"9Change the visibility of this constructor to "protected".(üù§Ê
+E
+java:S1068
+"*Remove this unused "Gender" private field.(µ Úøÿÿÿÿ
