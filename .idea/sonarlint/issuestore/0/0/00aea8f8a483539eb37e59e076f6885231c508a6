@@ -1,7 +1,0 @@
-
-n	java:S116"TRename this field "CharClass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(βιη“ψÿÿÿÿ
-b	java:S116"MRename this field "HP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Μκ®±
-H
-java:S1068"-Remove this unused "CharClass" private field.(βιη“ψÿÿÿÿ
-<
-java:S1068"&Remove this unused "HP" private field.(Μκ®±
