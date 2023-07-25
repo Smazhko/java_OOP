@@ -1,28 +1,65 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-
 public class TEMP {
-    public static void main(String[] args) {
-        List<Integer> numList = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,10,22,14));
 
-        System.out.println("СПИСОК: " + numList);
+	public static abstract class BaseHero {
+		private int hp;
+		private int mp;
 
-        Iterator<Integer> iterNumList = numList.listIterator();
+		public BaseHero(int hp, int mp) {
+			this.hp = hp;
+			this.mp = mp;
+		}
 
-        System.out.println("ИТЕРАТОР: "+iterNumList);
+		public BaseHero() {
+			this.hp = 100;
+			this.mp = 100;
+		}
 
-        numList.sort(Integer::compareTo);
-        System.out.println("СОРТИРОВКА");
+		public int getHp() {
+			return hp;
+		}
 
-        while (iterNumList.hasNext()){
+		public int getMp() {
+			return mp;
+		}
 
-            System.out.println(iterNumList.next());
-        }
+		public void setHp(int hp) {
+			this.hp = hp;
+		}
 
-        System.out.println("СПИСОК: "+numList);
+		public void setMp(int mp) {
+			this.mp = mp;
+		}
+	}
+
+	public static class Druid extends BaseHero {
+		public Druid() {
+		}
+
+		private int hpp = getHp();
+
+		public int getHp() {
+			return hpp;
+		}
+	}
+
+	public static class Dwarf extends Druid {
+	}
 
 
-    }
+	public static void main(String[] args) {
+
+		BaseHero dwarvenMistic = new Druid();
+
+		System.out.println(dwarvenMistic.getClass());
+
+		int qw;
+		int wer;
+
+		qw = wer = 10;
+
+		System.out.println(qw + " " + wer);
+
+
+
+	}
 }

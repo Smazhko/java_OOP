@@ -1,4 +1,4 @@
-package sem2_1;
+package sem2.example_1;
 
 public interface interf_1 {
 

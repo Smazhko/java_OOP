@@ -1,4 +1,4 @@
-package sem2_2;
+package sem2.example_2;
 
 public class main {
 

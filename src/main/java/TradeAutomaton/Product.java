@@ -32,6 +32,13 @@ public abstract class Product
 		this.count = 1000;
 	}
 
+	public Product(){
+		this.name = "Наименование товара";
+		this.category = "";
+		this.price = 0;
+		this.count = 0;
+	}
+
 	public String getName()
 	{
 		return name;
@@ -52,9 +59,14 @@ public abstract class Product
 		return count;
 	}
 
-	public void decreseCount()
+	public void decreaseCount()
 	{
-		this.count--;
+		if (count > 0){
+			this.count--;
+		}
+		else {
+			System.out.println("Извините, товар закончился.");
+		}
 	}
 
 	@Override
