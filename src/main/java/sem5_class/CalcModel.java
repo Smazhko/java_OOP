@@ -2,6 +2,13 @@ package sem5_class;
 
 public class CalcModel {         // Логика программы
 
+    /**
+     *
+     * @param value1 первое слагаемое
+     * @param value2 второе слагаемое
+     * @return сумма двух чисел
+     */
+
     public int sum(int value1, int value2) {
         return value1 + value2;
     }
