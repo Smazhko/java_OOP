@@ -1,15 +1,6 @@
-/*
-Добавить пять интерфейсов к классам из ДЗ 1, включающих все концепции, упомянутые на семинаре. включающих:
-- интерфейсы,
-- константы,
-- default методы,
-- перегрузки и переопределения методов.Вы можете выбрать любой класс из ДЗ 1 и добавить к нему интерфейсы.
-Вам также предоставляется возможность добавить новые методы или использовать уже существующие методы в классе.
- */
+package sem1_homework;
 
-package sem3_homework;
-
-public class _FigureMain
+public class RectangleMain
 {
 	public static void main(String[] args)
 	{
@@ -19,13 +10,13 @@ public class _FigureMain
 
 
 		System.out.println(rect01);
-		System.out.printf(rect01.showCalcs());
+		System.out.printf("Его периметр = %d. площадь = %d.%n", rect01.calculatePerimeter(), rect01.calculateArea());
 
 		System.out.println(rect02);
-		System.out.printf(rect02.showCalcs());
+		System.out.printf("Его периметр = %d. площадь = %d.%n", rect02.calculatePerimeter(), rect02.calculateArea());
 
 		System.out.println(rect03);
-		System.out.printf(rect03.showCalcs());
+		System.out.printf("Его периметр = %d. площадь = %d.%n", rect03.calculatePerimeter(), rect03.calculateArea());
 
 		Rectangle rect04 = new Rectangle(0);
 		System.out.println(rect04);

@@ -1,6 +1,6 @@
 package sem1_homework;
 
-public class cats_main
+public class CatsMain
 {
 	public static void main(String[] args)
 	{

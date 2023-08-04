@@ -1,6 +1,6 @@
 package sem1_homework;
 
-public class book_main
+public class BookMain
 {
 	public static void main(String[] args) {
 		Book book01 = new Book("Унесенные ветром", "Митчелл М.", true);

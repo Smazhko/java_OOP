@@ -1,10 +1,10 @@
 package sem6_class;
 
-class Rectangle {
+class Rectangle1 {
     protected int width;
     protected int height;
 
-    public Rectangle(int width, int height) {
+    public Rectangle1(int width, int height) {
         this.width = width;
         this.height = height;
     }
@@ -22,11 +22,11 @@ class Rectangle {
     }
 }
 
-class Square {
-    private Rectangle rectangle;
+class Square1 {
+    private Rectangle1 rectangle;
 
-    public Square(int size) {
-        this.rectangle = new Rectangle(size, size);
+    public Square1(int size) {
+        this.rectangle = new Rectangle1(size, size);
     }
 
     public void setSize(int size) {
