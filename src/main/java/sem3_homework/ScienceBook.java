@@ -3,7 +3,7 @@ package sem3_homework;
 public class ScienceBook extends Book {
     String science;
 
-    private static final String SCIENCE_LITERATURE = "Научная литература";
+    private static final String SCIENCE_LITERATURE = "Научная лит-ра";
     private static final String ANOTHER_SCIENCE = "Другое";
 
     // конструктор ИМЯ, АВТОР, НАУКА, НОСИТЕЛЬ, доступность

@@ -15,13 +15,13 @@ import java.util.Collections;
 import java.util.Iterator;
 
 public class Bookcase implements Iterator<Publication> {
-	private ArrayList<Publication> catalog = new ArrayList<>();
+	private ArrayList<Book> catalog = new ArrayList<>();
 
-	public void add(Publication newBook) {
+	public void add(Book newBook) {
 		catalog.add(newBook);
 	}
 
-	public void remove(Publication bookToRemove) {
+	public void remove(Book bookToRemove) {
 		System.out.print("-".repeat(40) + "\nУдаление издания \"" + bookToRemove.getTitle() + "\": ");
 		if (catalog.contains(bookToRemove)) {
 			catalog.remove(bookToRemove);
