@@ -24,37 +24,30 @@ package sem3_homework;
 
 public abstract class Publication implements IBasePublication, Comparable<Publication> {
 	private String title;
-	private String author;
-	private PublicationType type;
+	private MediumType type;
 	private boolean availability;
 
-	public enum PublicationType {
+	public enum MediumType { // тип носителя
 		PRINTED,
-		DIGITAL,
-		AUDIO
+		PAPERLESS
 	}
 
-	public Publication(String title, String author, PublicationType pubType, boolean available) {
+	protected Publication(String title, MediumType type, boolean availability) {
 		this.title = title;
-		this.author = author;
-		this.type = pubType;
-		this.availability = available;
+		this.type = type;
+		this.availability = availability;
 	}
 
 	public String getTitle() {
 		return title;
 	}
 
-	public String getAuthor() {
-		return author;
-	}
 
 	@Override
 	public String getType() {
 		return switch (type) {
 			case PRINTED -> "Печатное издание";
-			case DIGITAL -> "Электронное издание";
-			case AUDIO -> "Аудио-книга (подкаст)";
+			case PAPERLESS -> "Электронное издание";
 		};
 	}
 
@@ -70,19 +63,11 @@ public abstract class Publication implements IBasePublication, Comparable<Public
 		this.availability = false;
 	}
 
-	public String getInfo() {
-		String availString = "доступна";
-		if (!availability) {
-			availString = "недоступна";
-		}
-		return String.format("%-35s /%-18s. Статус: %s", "\"" + title + "\"", author, availString);
-	}
+	abstract String getInfo();
 
 	@Override
-	public int compareTo(Publication o) {
-		String thisBookName = this.author + this.title;
-		String anotherBookName = o.author + o.title;
-		return thisBookName.compareTo(anotherBookName);
+	public int compareTo(Publication o){
+		return this.title.compareTo(o.title);
 	}
 
 	@Override
@@ -96,8 +81,7 @@ public abstract class Publication implements IBasePublication, Comparable<Public
 
 		Publication anotherPub = (Publication) obj;
 
-		return this.getAuthor().equals(anotherPub.getAuthor()) &&
-				this.getTitle().equals(anotherPub.getTitle());
+		return this.getTitle().equals(anotherPub.getTitle());
 	}
 
 }

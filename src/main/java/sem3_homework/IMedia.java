@@ -6,4 +6,7 @@ public interface IMedia {
     // true - regular(serial)
     // false - notRegular
 
+    String getReleaseDate();
+
+
 }

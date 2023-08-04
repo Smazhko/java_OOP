@@ -11,6 +11,7 @@
 package sem3_homework;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class Bookcase implements Iterator<Publication> {
@@ -33,7 +34,7 @@ public class Bookcase implements Iterator<Publication> {
 
 	public void displayAvailableBooks() {
 		System.out.println("-".repeat(40) + "\nКниги библиотеки, доступные на данный момент:");
-		catalog.sort((o1, o2) -> o1.getTitle().compareTo(o2.getTitle()));
+		Collections.sort(catalog);
 		for (int i = 0; i < catalog.size(); i++) {
 			if (catalog.get(i).getAvailability()){
 				System.out.printf("> %-35s (%-20s) %n", "\"" + catalog.get(i).getTitle() + "\"", catalog.get(i).getAuthor());
@@ -43,7 +44,7 @@ public class Bookcase implements Iterator<Publication> {
 	
 	public void displayAllBooks(){
 		System.out.println("-".repeat(40) + "\nВсе книги библиотеки (сортировка по заглавию книги):");
-		catalog.sort((o1, o2) -> o1.getTitle().compareTo(o2.getTitle()));
+		Collections.sort(catalog);
 		for(Publication book: catalog){
 			System.out.println("> " + book.getInfo());
 		}
@@ -51,10 +52,9 @@ public class Bookcase implements Iterator<Publication> {
 
 	public void search(String searchPhrase){
 		System.out.println("-".repeat(40) + "\nПоиск книг по фразе '"+ searchPhrase + "':");
-		catalog.sort((o1, o2) -> o1.getAuthor().compareTo(o2.getAuthor()));
+		Collections.sort(catalog);
 		for (int i = 0; i < catalog.size(); i++) {
-			if (catalog.get(i).getAuthor().toLowerCase().contains(searchPhrase.toLowerCase()) ||
-					catalog.get(i).getTitle().toLowerCase().contains(searchPhrase.toLowerCase())){
+			if (catalog.get(i).getTitle().toLowerCase().contains(searchPhrase.toLowerCase())){
 				System.out.println("> " + catalog.get(i).getInfo());
 			}
 		}

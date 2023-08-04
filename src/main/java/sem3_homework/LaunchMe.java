@@ -29,15 +29,15 @@ public class LaunchMe
 {
 	public static void main(String[] args) {
 		Publication book01 = new ArtBook("Унесенные ветром", "Митчелл М.", "Роман-эпопея",
-				Publication.PublicationType.PRINTED, true);
+				Publication.MediumType.PRINTED, true);
 		Publication book02 = new ArtBook("Гарри Поттер: философский камень", "Роулинг Дж.",
-				Publication.PublicationType.PRINTED, false);
+				Publication.MediumType.PRINTED, false);
 		Publication book03 = new ArtBook("Тарас Бульба", "Гоголь Н.В.", "Историческая проза", true);
 		Publication book04 = new ArtBook("О дивный новый мир", "Хаксли О.", "Антиутопия", false);
 		Publication book05 = new ArtBook("Война и мир", "Толстой Л.Н.", true);
 		Publication book06 = new ArtBook("Петербургские повести", "Гоголь Н.В.");
 		Publication book07 = new ArtBook("1984", "Оруэлл Дж.", false);
-		Publication book08 = new ArtBook("Затерянный мир", "Дойл Артур Конан", "Фантастика", Publication.PublicationType.AUDIO);
+		Publication book08 = new ArtBook("Затерянный мир", "Дойл Артур Конан", "Фантастика", Publication.MediumType.PAPERLESS);
 
 		Publication book09 = new ScienceBook("Я познаю мир (серия книг)", "Полянский А.Н. и др.", true);
 		Publication book10 = new ScienceBook("Грокаем алгоритмы", "Бхаргава А.", "Программирование", true);
