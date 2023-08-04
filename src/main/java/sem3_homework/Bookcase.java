@@ -22,28 +22,28 @@ public class Bookcase implements Iterator<Publication> {
 	}
 
 	public void remove(Publication bookToRemove) {
-		System.out.print("-".repeat(40) + "\nУдаление книги \"" + bookToRemove.getTitle() + "\": ");
+		System.out.print("-".repeat(40) + "\nУдаление издания \"" + bookToRemove.getTitle() + "\": ");
 		if (catalog.contains(bookToRemove)) {
 			catalog.remove(bookToRemove);
 			System.out.println("успешно!");
 		}
 		else {
-			System.out.println("каталог не содержит данной книги. Удалять нечего!");
+			System.out.println("каталог не содержит данного издания. Удалять нечего!");
 		}
 	}
 
-	public void displayAvailableBooks() {
-		System.out.println("-".repeat(40) + "\nКниги библиотеки, доступные на данный момент:");
+	public void displayAvailable() {
+		System.out.println("-".repeat(40) + "\nИздания библиотеки, доступные на данный момент:");
 		Collections.sort(catalog);
 		for (int i = 0; i < catalog.size(); i++) {
 			if (catalog.get(i).getAvailability()){
-				System.out.printf("> %-35s (%-20s) %n", "\"" + catalog.get(i).getTitle() + "\"", catalog.get(i).getAuthor());
+				System.out.println(">" +catalog.get(i).getInfo());
 			}
 		}
 	}
 	
-	public void displayAllBooks(){
-		System.out.println("-".repeat(40) + "\nВсе книги библиотеки (сортировка по умолчанию):");
+	public void displayAll(){
+		System.out.println("-".repeat(40) + "\nВсе издания библиотеки (сортировка по умолчанию):");
 		Collections.sort(catalog);
 		for(Publication book: catalog){
 			System.out.println("> " + book.getInfo());
@@ -51,10 +51,10 @@ public class Bookcase implements Iterator<Publication> {
 	}
 
 	public void search(String searchPhrase){
-		System.out.println("-".repeat(40) + "\nПоиск книг по фразе '"+ searchPhrase + "':");
+		System.out.println("-".repeat(40) + "\nПоиск издания по фразе '"+ searchPhrase + "':");
 		Collections.sort(catalog);
 		for (int i = 0; i < catalog.size(); i++) {
-			if (catalog.get(i).getTitle().toLowerCase().contains(searchPhrase.toLowerCase())){
+			if (catalog.get(i).getInfo().toLowerCase().contains(searchPhrase.toLowerCase())){
 				System.out.println("> " + catalog.get(i).getInfo());
 			}
 		}

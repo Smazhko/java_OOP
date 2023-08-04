@@ -55,14 +55,14 @@ public class LaunchMe
 		library.add(book09);
 		library.add(book10);
 
-		library.displayAllBooks();
-		library.displayAvailableBooks();
+		library.displayAll();
+		library.displayAvailable();
 		library.search("гог");
 		library.search("мир");
 		library.remove(book05);
 		library.remove(book11);
 		library.remove(book06);
-		library.displayAllBooks();
+		library.displayAll();
 		library.search("мир");
 
 	}

@@ -1,8 +1,12 @@
 package sem3_homework;
 
-public abstract class Periodical implements IBasePublication, IMedia {
+public abstract class Periodical extends  Publication implements IMedia {
 
-    String releaseDate;
+    private String releaseDate;
+
+    protected Periodical(String title, MediumType type, boolean availability) {
+        super(title, type, availability);
+    }
 
     public String getPeriod(){
     // DAILY
@@ -10,6 +14,11 @@ public abstract class Periodical implements IBasePublication, IMedia {
     // MONTHLY
     // YEARLY
     return null;
+    }
+
+    @Override
+    public String getReleaseDate() {
+        return releaseDate;
     }
 
 }

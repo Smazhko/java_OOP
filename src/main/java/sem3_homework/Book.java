@@ -1,6 +1,6 @@
 package sem3_homework;
 
-public class Book extends Publication{
+public class Book extends Publication implements Comparable<Book>{
 
     private String author;
     private String kind; // художественная, научная, школьная, специализированная и др
@@ -12,7 +12,7 @@ public class Book extends Publication{
         this.kind = kind;
     }
 
-    public String getAuthor() {
+    private String getAuthor() {
         return author;
     }
 
@@ -21,11 +21,11 @@ public class Book extends Publication{
         if (!this.getAvailability()) {
             availString = "недоступна";
         }
-        return String.format("%-35s / %-18s Статус: %s", "\"" + getTitle() + "\"", author, availString);
+        return String.format("%s (%s) - %s. Статус: %s", "\"" + getTitle() + "\"", author, kind, availString);
     }
 
     @Override
-    public int compareTo(Publication o) {
+    public int compareTo(Book o){
         return this.getTitle().compareTo(o.getTitle());
     }
 
@@ -40,8 +40,7 @@ public class Book extends Publication{
 
         Book anotherPub = (Book) obj;
 
-        return this.getAuthor().equals(anotherPub.getAuthor()) &&
-                this.getTitle().equals(anotherPub.getTitle());
+        return this.getTitle().equals(anotherPub.getTitle()) &&
+                this.getAuthor().equals(anotherPub.getAuthor());
     }
-
 }

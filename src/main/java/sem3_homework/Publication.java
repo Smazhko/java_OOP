@@ -22,7 +22,7 @@
 
 package sem3_homework;
 
-public abstract class Publication implements IBasePublication, Comparable<Publication> {
+public abstract class Publication implements IBasePublication {
 	private String title;
 	private MediumType type;
 	private boolean availability;
@@ -64,24 +64,5 @@ public abstract class Publication implements IBasePublication, Comparable<Public
 	}
 
 	abstract String getInfo();
-
-	@Override
-	public int compareTo(Publication o){
-		return this.title.compareTo(o.title);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj) {
-			return true;
-		}
-		if (obj == null || getClass() != obj.getClass()) {
-			return false;
-		}
-
-		Publication anotherPub = (Publication) obj;
-
-		return this.getTitle().equals(anotherPub.getTitle());
-	}
 
 }
