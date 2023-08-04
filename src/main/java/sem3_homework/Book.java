@@ -38,7 +38,7 @@ public class Book extends Publication{
             return false;
         }
 
-        Publication anotherPub = (Publication) obj;
+        Book anotherPub = (Book) obj;
 
         return this.getAuthor().equals(anotherPub.getAuthor()) &&
                 this.getTitle().equals(anotherPub.getTitle());

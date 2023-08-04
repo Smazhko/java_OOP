@@ -43,7 +43,7 @@ public class Bookcase implements Iterator<Publication> {
 	}
 	
 	public void displayAllBooks(){
-		System.out.println("-".repeat(40) + "\nВсе книги библиотеки (сортировка по заглавию книги):");
+		System.out.println("-".repeat(40) + "\nВсе книги библиотеки (сортировка по умолчанию):");
 		Collections.sort(catalog);
 		for(Publication book: catalog){
 			System.out.println("> " + book.getInfo());

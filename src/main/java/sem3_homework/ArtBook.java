@@ -3,8 +3,8 @@ package sem3_homework;
 public class ArtBook extends Book {
     String genre;
 
-    private static final String ANOTHER_GENRE = "Другое";
     private static final String ART_LITERATURE= "Художественная литература";
+    private static final String ANOTHER_GENRE = "Другое";
 
 
     // конструктор ИМЯ, АВТОР, ЖАНР, ТИП, доступность
