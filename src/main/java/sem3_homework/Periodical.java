@@ -1,6 +1,6 @@
 package sem3_homework;
 
-public abstract class Periodical implements IMedia {
+public abstract class Periodical implements IBasePublication, IMedia {
 
     public String getPeriod(){
     // DAILY

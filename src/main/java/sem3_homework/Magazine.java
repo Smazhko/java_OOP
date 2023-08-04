@@ -1,6 +1,6 @@
 package sem3_homework;
 
-public class Magazine extends Periodical implements IBasePublication, IMedia {
+public class Magazine extends Periodical implements IMedia {
 
     @Override
     public String getType() {
@@ -10,6 +10,21 @@ public class Magazine extends Periodical implements IBasePublication, IMedia {
     @Override
     public String getTitle() {
         return null;
+    }
+
+    @Override
+    public void setAvailabilityON() {
+
+    }
+
+    @Override
+    public void setAvailabilityOFF() {
+
+    }
+
+    @Override
+    public boolean getAvailability() {
+        return false;
     }
 
     @Override

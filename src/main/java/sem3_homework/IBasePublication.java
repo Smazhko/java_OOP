@@ -11,8 +11,6 @@ public interface IBasePublication {
 
     String getTitle();
 
-    String getAuthor();
-
     void setAvailabilityON();
 
     void setAvailabilityOFF();

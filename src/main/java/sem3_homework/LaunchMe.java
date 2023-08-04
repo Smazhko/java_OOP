@@ -39,7 +39,7 @@ public class LaunchMe
 		Publication book07 = new ArtBook("1984", "Оруэлл Дж.", false);
 		Publication book08 = new ArtBook("Затерянный мир", "Дойл Артур Конан", "Фантастика", Publication.PublicationType.AUDIO);
 
-		Publication book09 = new ScienceBook("Я познаю мир (серия книг)", "коллектив авторов", true);
+		Publication book09 = new ScienceBook("Я познаю мир (серия книг)", "Полянский А.Н. и др.", true);
 		Publication book10 = new ScienceBook("Грокаем алгоритмы", "Бхаргава А.", "Программирование", true);
 		Publication book11 = new ScienceBook("Java: полное руководство", "Шилдт Г.", "Программирование", false);
 
