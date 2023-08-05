@@ -32,7 +32,7 @@ public abstract class Publication implements IBasePublication {
 		PAPERLESS
 	}
 
-	protected Publication(String title, MediumType type, boolean availability) {
+	public Publication(String title, MediumType type, boolean availability) {
 		this.title = title;
 		this.type = type;
 		this.availability = availability;
@@ -57,10 +57,12 @@ public abstract class Publication implements IBasePublication {
 
 	public void setAvailabilityON() {
 		this.availability = true;
+		System.out.println("-".repeat(40) + "\nИзменение статуса: \n" + this.getInfo());
 	}
 
 	public void setAvailabilityOFF() {
 		this.availability = false;
+		System.out.println("-".repeat(40) + "\nИзменение статуса: \n" + this.getInfo());
 	}
 
 	abstract String getInfo();

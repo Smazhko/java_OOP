@@ -1,6 +1,6 @@
 package sem3_homework;
 
-public abstract class Periodical extends  Publication implements IMedia {
+public abstract class Periodical extends Publication implements IMedia {
 
     private String releaseDate;
 

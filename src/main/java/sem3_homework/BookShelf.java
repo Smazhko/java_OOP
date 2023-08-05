@@ -10,63 +10,43 @@
  */
 package sem3_homework;
 
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
+import java.util.List;
 
-public class Bookcase implements Iterator<Publication> {
-	private ArrayList<Book> catalog = new ArrayList<>();
+public class BookShelf<E extends Book> extends Shelf<E> {
 
-	public void add(Book newBook) {
-		catalog.add(newBook);
-	}
+	private final List<E> bookStorage = getCatalog();
 
-	public void remove(Book bookToRemove) {
-		System.out.print("-".repeat(40) + "\nУдаление издания \"" + bookToRemove.getTitle() + "\": ");
-		if (catalog.contains(bookToRemove)) {
-			catalog.remove(bookToRemove);
-			System.out.println("успешно!");
-		}
-		else {
-			System.out.println("каталог не содержит данного издания. Удалять нечего!");
-		}
-	}
 
+	@Override
 	public void displayAvailable() {
-		System.out.println("-".repeat(40) + "\nИздания библиотеки, доступные на данный момент:");
-		Collections.sort(catalog);
-		for (int i = 0; i < catalog.size(); i++) {
-			if (catalog.get(i).getAvailability()){
-				System.out.println(">" +catalog.get(i).getInfo());
+		System.out.println("-".repeat(40) + "\nКниги хранилища, доступные на данный момент:");
+		Collections.sort(this.bookStorage);
+		for (E book: bookStorage) {
+			if (book.getAvailability()){
+				System.out.println(">" + book.getInfo());
 			}
 		}
 	}
-	
+
+	@Override
 	public void displayAll(){
-		System.out.println("-".repeat(40) + "\nВсе издания библиотеки (сортировка по умолчанию):");
-		Collections.sort(catalog);
-		for(Publication book: catalog){
+		System.out.println("-".repeat(40) + "\nВсе книги хранилища (сортировка по умолчанию):");
+		Collections.sort(bookStorage);
+		for(E book: bookStorage){
 			System.out.println("> " + book.getInfo());
 		}
 	}
 
+	@Override
 	public void search(String searchPhrase){
 		System.out.println("-".repeat(40) + "\nПоиск издания по фразе '"+ searchPhrase + "':");
-		Collections.sort(catalog);
-		for (int i = 0; i < catalog.size(); i++) {
-			if (catalog.get(i).getInfo().toLowerCase().contains(searchPhrase.toLowerCase())){
-				System.out.println("> " + catalog.get(i).getInfo());
+		Collections.sort(bookStorage);
+		for (E book: bookStorage) {
+			if (book.getInfo().toLowerCase().contains(searchPhrase.toLowerCase())){
+				System.out.println("> " + book.getInfo());
 			}
 		}
 	}
 
-	@Override
-	public boolean hasNext() {
-		return false;
-	}
-
-	@Override
-	public Publication next() {
-		return null;
-	}
 }

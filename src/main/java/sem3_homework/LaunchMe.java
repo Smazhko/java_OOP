@@ -43,27 +43,31 @@ public class LaunchMe
 		Book book10 = new ScienceBook("Грокаем алгоритмы", "Бхаргава А.", "Программирование", true);
 		Book book11 = new ScienceBook("Java: полное руководство", "Шилдт Г.", "Программирование", false);
 
-		Bookcase library = new Bookcase();
-		library.add(book01);
-		library.add(book02);
-		library.add(book03);
-		library.add(book04);
-		library.add(book05);
-		library.add(book06);
-		library.add(book07);
-		library.add(book08);
-		library.add(book09);
-		library.add(book10);
+		Shelf<Book> bookStorage = new BookShelf<>();
+		bookStorage.add(book01);
+		bookStorage.add(book02);
+		bookStorage.add(book03);
+		bookStorage.add(book04);
+		bookStorage.add(book05);
+		bookStorage.add(book06);
+		bookStorage.add(book07);
+		bookStorage.add(book08);
+		bookStorage.add(book09);
+		bookStorage.add(book10);
 
-		library.displayAll();
-		library.displayAvailable();
-		library.search("гог");
-		library.search("мир");
-		library.remove(book05);
-		library.remove(book11);
-		library.remove(book06);
-		library.displayAll();
-		library.search("мир");
+
+		bookStorage.displayAll();
+		bookStorage.displayAvailable();
+		book03.setAvailabilityOFF();
+		book06.setAvailabilityOFF();
+		bookStorage.displayAvailable();
+		bookStorage.search("гог");
+		bookStorage.search("мир");
+		bookStorage.remove(book05);
+		bookStorage.remove(book11);
+		bookStorage.remove(book06);
+		bookStorage.displayAll();
+		bookStorage.search("мир");
 
 	}
 }

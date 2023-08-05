@@ -21,7 +21,7 @@ public class Book extends Publication implements Comparable<Book>{
         if (!this.getAvailability()) {
             availString = "недоступна";
         }
-        return String.format("%s (%s) - %s. Статус: %s", "\"" + getTitle() + "\"", author, kind, availString);
+        return String.format("%-50s | %-15s | Статус: %s", "\"" + getTitle() + "\" (" + author + ")", kind, availString);
     }
 
     @Override
