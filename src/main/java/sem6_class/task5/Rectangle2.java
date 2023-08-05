@@ -1,4 +1,4 @@
-package sem6_class;
+package sem6_class.task5;
 
 class Rectangle1 {
     protected int width;

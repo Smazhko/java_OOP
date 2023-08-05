@@ -1,6 +1,7 @@
-package sem6_class;
+package sem6_class.task5;
 
 //принцип открытости-закрытости
+
 //public class Shape {
 //    private String type;
 //
@@ -36,32 +37,4 @@ package sem6_class;
 
 abstract class Shape {
     public abstract void draw();
-}
-
-class Circle extends Shape {
-    @Override
-    public void draw() {
-        System.out.println("Drawing a circle.");
-    }
-}
-
-class Rectangle extends Shape {
-    @Override
-    public void draw() {
-        System.out.println("Drawing a rectangle.");
-    }
-}
-
-class Triangle extends Shape {
-    @Override
-    public void draw() {
-        System.out.println("Drawing a triangle.");
-    }
-}
-
-class Square extends Shape {
-    @Override
-    public void draw() {
-        System.out.println("Drawing a square.");
-    }
 }

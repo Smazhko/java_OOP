@@ -1,4 +1,4 @@
-package sem6_class;
+package sem6_class.task1;
 
 //// Без применения принципа SOLID
 //class Animal {
