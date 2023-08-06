@@ -166,6 +166,7 @@ class Box<T> { // обозначение типа - T
 
 ```java
 class Paper {}
+ 
 Box<Paper> boxForPaper = new Box<Paper>();
 ```
 
@@ -490,3 +491,7 @@ List<? super Garbage> example3 = new ArrayList<Garbage>();
 |                  Wildcard                   |                                     Обозначается символом «?» — неизвестный тип                                     |
 |  Ограниченный wildcard (bounded wildcard)   |               Wildcard, который ограничен сверху — <? extends Garbage> или снизу — <? super Garbage>                |
 |            Сырой тип (raw type)             |                       Имя дженерик-типа без аргументов типа. Для List<E> сырой тип — это List                       |
+
+https://skillbox.ru/media/base/dzheneriki-v-java-dlya-samykh-malenkikh/
+
+https://skillbox.ru/media/code/dzheneriki-v-java-dlya-tekh-kto-postarshe/
