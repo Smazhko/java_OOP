@@ -8,10 +8,6 @@ public interface IBasePublication {
 
     String getTitle();
 
-    void setAvailabilityON();
-
-    void setAvailabilityOFF();
-
     boolean getAvailability();
 
 }

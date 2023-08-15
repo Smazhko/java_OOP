@@ -185,13 +185,9 @@ Y
 ^
 .src/main/java/sem5_homework/UserPresenter.java,5\8\584b5b00879dd9adfede374e1d6e1bf755bb7690
 S
-#src/main/java/sem6_homework/task.md,5\a\5aa8ba55946a41faff6d86b0c9f256382b49fb97
-S
 #src/main/java/sem7_homework/task.md,f\b\fb9d69baa154b9e4b88742335a5f6bf49f945e7b
 ^
 .src/main/java/sem4_homework/DataContainer.java,3\9\39e297d0a879084fa0d0235a53e364434fc864ca
-\
-,src/main/java/sem6_homework/ScienceBook.java,2\1\21372f5002249bb663b3ca396e892c274411f24e
 X
 (src/main/java/sem6_class/task1/main.java,b\f\bf9a6e13bdd60293438c9629b653002837a66494
 U

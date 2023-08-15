@@ -58,10 +58,8 @@ public class LaunchMe
 
 		bookStorage.displayAll();
 		bookStorage.displayAvailable();
-		book03.setAvailabilityOFF();
-		System.out.println("-".repeat(40) + "\nИзменение статуса: \n" + IGetBookInfo.info(book03));
-		book06.setAvailabilityOFF();
-		System.out.println("-".repeat(40) + "\nИзменение статуса: \n" + IGetBookInfo.info(book06));
+		IChangeAvailability.off(book03);
+		IChangeAvailability.off(book06);
 		bookStorage.displayAvailable();
 		bookStorage.search("гог");
 		bookStorage.search("мир");
@@ -71,17 +69,17 @@ public class LaunchMe
 		bookStorage.displayAll();
 		bookStorage.search("мир");
 
-		Periodical journal01 = new Magazine("Вокруг света", "01.02.1995", true);
-		Periodical journal02 = new Magazine("Вокруг света", "02.04.1993", Periodical.PERIODICITY.MONTHLY,
+		Periodical journal01 = new Magazine("Вокруг света", "1995.08", true);
+		Periodical journal02 = new Magazine("Вокруг света", "1995.04", Periodical.PERIODICITY.MONTHLY,
 				Publication.MEDIUM_TYPE.PRINTED, true);
-		Periodical journal03 = new Magazine("Вокруг света", "01.05.1993", false);
-		Periodical journal04 = new Magazine("За рулём", "02.06.2018", Periodical.PERIODICITY.MONTHLY,
+		Periodical journal03 = new Magazine("Вокруг света", "1993.05", false);
+		Periodical journal04 = new Magazine("За рулём", "2018.06", Periodical.PERIODICITY.MONTHLY,
 				Publication.MEDIUM_TYPE.PAPERLESS, true);
-		Periodical journal05 = new Magazine("За рулём", "02.09.2018", Periodical.PERIODICITY.MONTHLY,
+		Periodical journal05 = new Magazine("За рулём", "2018.09", Periodical.PERIODICITY.MONTHLY,
 				Publication.MEDIUM_TYPE.PAPERLESS, false);
-		Periodical journal06 = new Magazine("За рулём", "02.12.2018", Periodical.PERIODICITY.MONTHLY,
+		Periodical journal06 = new Magazine("За рулём", "2018.12", Periodical.PERIODICITY.MONTHLY,
 				Publication.MEDIUM_TYPE.PAPERLESS, true);
-		Periodical journal07 = new Magazine("Крым", "01.12.1995", Periodical.PERIODICITY.OTHER, true);
+		Periodical journal07 = new Magazine("Крым", "1995", Periodical.PERIODICITY.YEARLY, true);
 
 		Shelf<Periodical> journalStorage = new PeriodicalShelf<>();
 		journalStorage.add(journal01);
@@ -96,6 +94,7 @@ public class LaunchMe
 		journalStorage.displayAvailable();
 		journalStorage.remove(journal03);
 		journalStorage.remove(journal05);
+		IChangeAvailability.off(journal01);
 		journalStorage.displayAll();
 		journalStorage.search("вокруг");
 

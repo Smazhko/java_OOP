@@ -47,4 +47,9 @@ public class ScienceBook extends Book {
         super(title, author, SCIENCE_LITERATURE, MEDIUM_TYPE.PRINTED, true);
         this.science = ANOTHER_SCIENCE;
     }
+
+    @Override
+    public String getKind() {
+        return "Научная лит-ра";
+    }
 }

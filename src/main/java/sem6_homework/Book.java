@@ -1,7 +1,5 @@
 package sem6_homework;
 
-
-
 public class Book extends Publication implements Comparable<Book>, IGetBookInfo{
 
     private String author;

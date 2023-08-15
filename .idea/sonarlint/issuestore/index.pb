@@ -186,12 +186,8 @@ S
 #src/main/java/sem7_homework/task.md,f\b\fb9d69baa154b9e4b88742335a5f6bf49f945e7b
 Y
 )src/main/java/sem5_homework/UserView.java,9\2\92a92cbf03cad0bd50439d386bfcc0da39eb2950
-S
-#src/main/java/sem6_homework/task.md,5\a\5aa8ba55946a41faff6d86b0c9f256382b49fb97
 ^
 .src/main/java/sem4_homework/DataContainer.java,3\9\39e297d0a879084fa0d0235a53e364434fc864ca
-\
-,src/main/java/sem6_homework/ScienceBook.java,2\1\21372f5002249bb663b3ca396e892c274411f24e
 U
 %src/main/java/sem5_homework/User.java,8\b\8b65cbd1e0358af2d6b85945eeee0f4381aa9076
 ]
