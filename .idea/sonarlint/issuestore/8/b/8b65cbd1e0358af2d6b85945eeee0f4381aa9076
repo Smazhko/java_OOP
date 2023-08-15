@@ -1,0 +1,19 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬°ù—8Ê½¶´ž1
+y
+java:S1450"WRemove the "password" field and declare it as a local variable in the relevant methods.(œãë­úÿÿÿÿ8Ì½¶´ž1
+X	java:S125""<This block of commented-out lines of code should be removed.(…ƒÃÔ8Ö½¶´ž1
+T
+java:S1135 "2Complete the task associated to this TODO comment.(‘·½—úÿÿÿÿ8×½¶´ž1
+T
+java:S1135@"2Complete the task associated to this TODO comment.(‘·½—úÿÿÿÿ8×½¶´ž1
+Q
+java:S1128"/Remove this unused import 'java.io.FileWriter'.(Ã‘ÅÃýÿÿÿÿ8×½¶´ž1
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8×½¶´ž1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8×½¶´ž1
+N
+java:S1068",Remove this unused "password" private field.(œãë­úÿÿÿÿ8Ø½¶´ž1
+N
+java:S1068",Remove this unused "dataFile" private field.(ã·¡üÿÿÿÿ8Ø½¶´ž1

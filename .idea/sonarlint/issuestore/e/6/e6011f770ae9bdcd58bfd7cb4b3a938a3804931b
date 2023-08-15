@@ -1,0 +1,8 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òêû×8Îß„Æš1
+M
+java:S1068"0Remove this unused "baseTriangle" private field.(¨ó×Ğ8Òß„Æš1
+G
+java:S1068"*Remove this unused "height" private field.(š»ä¶8Óß„Æš1
+Q
+java:S1068"/Remove this unused "heightAngle" private field.(æ­¡øÿÿÿÿ8Óß„Æš1

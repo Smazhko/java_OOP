@@ -1,0 +1,13 @@
+
+’
+java:S1192"uDefine a constant instead of duplicating this literal "Ğ•Ğ³Ğ¾ Ğ¿ĞµÑ€Ğ¸Ğ¼ĞµÑ‚Ñ€ = %d. Ğ¿Ğ»Ğ¾Ñ‰Ğ°Ğ´ÑŒ = %d.%n" 3 times.(úŞ€¸8ÏÑç¦˜1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚–îÑùÿÿÿÿ8ĞÑç¦˜1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ôä·8ÕÑç¦˜1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(úŞ€¸8ÖÑç¦˜1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(†Ãàù8ÖÑç¦˜1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(€¾ˆ÷úÿÿÿÿ8ÖÑç¦˜1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ğ³İ8ÖÑç¦˜1
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ìÕ¤J8×Ñç¦˜1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(±ºœ‰ûÿÿÿÿ8Ó‚é¦˜1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(îÚçÇùÿÿÿÿ8áÍé¦˜1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¡¸¬úÿÿÿÿ8òê¦˜1

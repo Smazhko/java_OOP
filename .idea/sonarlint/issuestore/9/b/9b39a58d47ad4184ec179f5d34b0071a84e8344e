@@ -1,0 +1,6 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬°ù—8¯£¨1
+Z
+java:S1854	"=Remove this useless assignment to local variable "presenter".(£ñÂî8µ£¨1
+K
+java:S1481	".Remove this unused "presenter" local variable.(£ñÂî8¶£¨1
