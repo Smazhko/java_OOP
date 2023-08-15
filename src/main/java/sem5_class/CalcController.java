@@ -1,9 +1,9 @@
 package sem5_class;
 
-public class CalcController { // Связывает модели представления, обрабатывая ввод пользователя
+public class CalcController { // Связывает модель и представление, обрабатывая ввод пользователя
 
-    private CalcModel model = new CalcModel();
-    private CalcView view = new CalcView();
+    private final CalcModel model;
+    private final CalcView view;
 
     public CalcController(CalcModel model, CalcView view) {
         this.model = model;
@@ -11,29 +11,34 @@ public class CalcController { // Связывает модели предста�
     }
 
     public void select() {
-        int num1 = view.userInput();
-        int num2 = view.userInput();
-        char ch = view.chooseOperation();
-        int result = 0;
-        switch (ch) {
-            case '+':
-                result = model.sum(num1, num2);
-                break;
-            case '-':
-                result = model.sub(num1, num2);
-                break;
-            case '/':
-                result = model.div(num1, num2);
-                break;
-            case '*':
-                result = model.mul(num1, num2);
-                break;
-            default:
-                System.out.println("Введена неверная операция");
-                break;
-
+        boolean continueFlag = true;
+        while (continueFlag) {
+            int num1 = view.userInput();
+            char ch = view.chooseOperation();
+            int num2 = view.userInput();
+            int result = 0;
+            switch (ch) {
+                case '+':
+                    result = model.sum(num1, num2);
+                    break;
+                case '-':
+                    result = model.sub(num1, num2);
+                    break;
+                case '/':
+                    result = model.div(num1, num2);
+                    break;
+                case '*':
+                    result = model.mul(num1, num2);
+                    break;
+                case 'Q', 'q', 'Й', 'й':
+                    continueFlag = false;
+                    break;
+                default:
+                    System.out.println("Введена неверная операция");
+                    break;
+            }
+            view.showOutput(result);
         }
-        view.showOutput(result);
     }
 }
 

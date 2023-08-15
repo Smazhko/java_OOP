@@ -492,6 +492,24 @@ List<? super Garbage> example3 = new ArrayList<Garbage>();
 |  Ограниченный wildcard (bounded wildcard)   |               Wildcard, который ограничен сверху — <? extends Garbage> или снизу — <? super Garbage>                |
 |            Сырой тип (raw type)             |                       Имя дженерик-типа без аргументов типа. Для List<E> сырой тип — это List                       |
 
+1. Дженерики для самых маленьких:  
 https://skillbox.ru/media/base/dzheneriki-v-java-dlya-samykh-malenkikh/
 
+2. Дженерики для тех, кто постарше:  
 https://skillbox.ru/media/code/dzheneriki-v-java-dlya-tekh-kto-postarshe/
+
+3. Общее об обобщениях:  
+https://metanit.com/java/tutorial/3.11.php
+
+4. Наследование дженериков:  
+https://metanit.com/java/tutorial/3.15.php
+
+
+--------------
+
+ООП в картинках  
+https://habr.com/ru/articles/463125/
+
+
+Интерфейс COMPARABLE: реализация метода equals в классе  
+https://dvsemenov.ru/poisk-i-udalenie-ne-standartnyx-obektov-v-spiskax-java/

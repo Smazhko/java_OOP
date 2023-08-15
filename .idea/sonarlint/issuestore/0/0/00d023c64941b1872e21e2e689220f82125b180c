@@ -1,15 +1,3 @@
 
-V
-java:S5993"9Change the visibility of this constructor to "protected".(ŞÆÊ8²ôæÌ˜1
-[
-java:S5993"9Change the visibility of this constructor to "protected".(Ûáúİùÿÿÿÿ8²ôæÌ˜1
-b
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ãÔ·‰8³ôæÌ˜1
-£
-java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÛÚ–®ıÿÿÿÿ8·ôæÌ˜1
-W
-java:S1161(":Add the "@Override" annotation above this method signature(èŠ¿á8ÚÄçÌ˜1
-Z	java:S1065"9Replace this use of System.out or System.err by a logger.(ìæ‘¼ıÿÿÿÿ8ºôæÌ˜1
-\
-java:S21333"?Remove this object instantiation and use "Druid.class" instead.(è·•‡8ºôæÌ˜1
-U	java:S106<"9Replace this use of System.out or System.err by a logger.(µ×¾ß8ºôæÌ˜1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(É­Ä¯ıÿÿÿÿ8‘ÂÕ±1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÍÜø»ÿÿÿÿÿ8Š•Ú±1
