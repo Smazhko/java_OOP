@@ -1,10 +1,10 @@
 package sem6_class.task5;
 
-class Rectangle1 {
+class RectangleNew {
     protected int width;
     protected int height;
 
-    public Rectangle1(int width, int height) {
+    public RectangleNew(int width, int height) {
         this.width = width;
         this.height = height;
     }
@@ -22,11 +22,12 @@ class Rectangle1 {
     }
 }
 
-class Square1 {
-    private Rectangle1 rectangle;
+//***********************************************************
+class SquareNew {
+    private RectangleNew rectangle;
 
-    public Square1(int size) {
-        this.rectangle = new Rectangle1(size, size);
+    public SquareNew(int size) {
+        this.rectangle = new RectangleNew(size, size);
     }
 
     public void setSize(int size) {
