@@ -19,7 +19,7 @@ public class UserView extends ColoredConsole{
             "Войти в систему",
             "Зарегистрироваться",
             "Вывести список пользователей (GOD MODE)",
-            "Выйти из программы"
+            "Выйти из программы..."
     };
 
 
@@ -28,7 +28,7 @@ public class UserView extends ColoredConsole{
             "Изменить пароль",
             "Выйти из учётной записи",
             "Удалить учётную запись",
-            "Выйти из программы"
+            "Выйти из программы..."
     };
 
     private static final String REGEX_LOGIN = "[\\w\\-\\_]+";

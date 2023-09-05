@@ -1,7 +1,7 @@
 package sem5_homework;
 
 public class ColoredConsole {
-    //РАЗУКРАШИВАЕМ КОНСОЛЬ
+    //РАЗУКРАШИВАЕМ КОНСОЛЬ.
     //https://habr.com/ru/companies/macloud/articles/558316/
     public static final String ANSI_DEFAULT = "\u001B[0m";
     public static final String ANSI_BLACK   = "\u001B[30m";

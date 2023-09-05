@@ -86,6 +86,9 @@ public class UserPresenter {
     }
 
 
+    /**
+     * Создание нового пользователя в базе
+     */
     public void userRegistriation(){
         String[] userInfo = view.getRegistrationInfo();
         String login    = userInfo[0];
@@ -100,6 +103,9 @@ public class UserPresenter {
         }
     }
 
+    /**
+     * Логика входа пользователя в систему
+     */
     public void userEntering(){
         String[] userInfo = view.getLoginInfo();  // получить от пользователя логин и пароль
         String login    = userInfo[0];

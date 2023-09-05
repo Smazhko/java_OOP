@@ -1,6 +1,6 @@
 package sem5_homework;
 
-
+// пустой класс пользователя с полями и БЕЗ функционала
 public class User {
 
     private String name;
