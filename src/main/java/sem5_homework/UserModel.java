@@ -28,10 +28,10 @@ class UserModel {
             try (FileWriter fwriter = new FileWriter(dataFile, false)) {
                 for (var user : allUsersList.entrySet()) {
                     String login = user.getKey();
-                    User currentUser = user.getValue();
+                    User curUser = user.getValue();
                     fwriter.write(login + ":" +
-                            currentUser.getPassword() + "," +
-                            currentUser.getName() + "\n");
+                            curUser.getPassword() + "," +
+                            curUser.getName() + "\n");
                 }
                 fwriter.flush();
             } catch (IOException ex) {
