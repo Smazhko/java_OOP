@@ -173,7 +173,8 @@ class UserModel {
      */
     public void getAllUsersInfo(){
         for(User user: allUsersList.values()){
-            System.out.println("- " + user.toString());
+            System.out.printf("%-18s  %-30s%n", user.getName(),
+                    "log: " + user.getLogin() + ", pswd:" + user.getPassword());
         }
     }
 

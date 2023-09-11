@@ -33,7 +33,6 @@ public class UserPresenter {
                 case 2:
                     // "Зарегистрироваться"
                     userRegistriation(); // вынесено в отдельный метод
-                    model.saveBase();
                     break;
                 case 3:
                     view.allUsersTitle();
@@ -101,6 +100,7 @@ public class UserPresenter {
         } else {
             view.sayRegSuccessful();
         }
+        model.saveBase();
     }
 
     /**

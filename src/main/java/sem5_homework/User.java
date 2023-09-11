@@ -39,6 +39,6 @@ public class User {
 
     @Override
     public String toString() {
-        return  name + " (" + login + ")";
+        return  name + " [log: " + login + "]";
     }
 }

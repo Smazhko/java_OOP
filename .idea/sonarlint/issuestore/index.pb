@@ -220,15 +220,19 @@ S
 usersBase.txt,c\1\c18d7930c8ee8b55c0e7b40c6c2dae9a25bc9378
 U
 %src/main/java/sem5_homework/MANUAL.MD,a\e\aea34268f6d3292291683fb4289afc0b1a21e7b0
-^
-.src/main/java/sem5_homework/UserPresenter.java,5\8\584b5b00879dd9adfede374e1d6e1bf755bb7690
 _
 /src/main/java/sem5_homework/ColoredConsole.java,3\5\35a4455741f995ea2be1bfd86c1250b7e2525302
-Z
-*src/main/java/sem5_homework/UserModel.java,4\9\49c6543d34afe4f67fffb66c33e5293ebc513a3c
-Y
-)src/main/java/sem5_homework/UserView.java,9\2\92a92cbf03cad0bd50439d386bfcc0da39eb2950
 d
 4src/main/java/sem6_homework/IChangeAvailability.java,f\e\feead582e6808ddb8a2305cd6ae7f64364010f85
 ]
 -src/main/java/sem6_homework/IGetBookInfo.java,a\d\adf49f2277f67ee474044509644aca305833450b
+^
+.src/main/java/sem7_homework/CalcPresenter.java,f\f\ff31e1bc4dbaab48012849e9466ecad47ae7f1d8
+Y
+)src/main/java/sem7_homework/CalcView.java,a\6\a659efec8dc5b7e2fbbcf2f2735a44a7e337121f
+S
+#src/main/java/sem7_homework/task.md,f\b\fb9d69baa154b9e4b88742335a5f6bf49f945e7b
+Z
+*src/main/java/sem7_homework/CalcModel.java,2\6\260d2edae1445b9cf09bc666879256df8f7046db
+a
+1src/main/java/sem6_homework/IBasePublication.java,c\c\cc9367eb5bf352e8855be63f4c36bcec55274846
