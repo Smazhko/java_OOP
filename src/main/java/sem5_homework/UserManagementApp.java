@@ -1,4 +1,3 @@
-
 package sem5_homework;
 
 public class UserManagementApp {
